@@ -4,6 +4,7 @@
 
 :root {
   --header-height: 3rem;
+  cursor: none;
 
   /*======= Colors =======*/
   /* Change Favorite color */
@@ -54,6 +55,29 @@
   --z-tooltip: 10;
   --z-fixed: 100;
   --z-modal: 1000;
+}
+
+.cursor-dot{
+  width: 5px;
+  height: 5px;
+  background-color: white;
+}
+
+.cursor-outline {
+  width: 30px;
+  height: 30px;
+  border: 2px solid hsla(0, 0%, 100%, 0.5);
+}
+
+.cursor-dot,
+.cursor-outline {
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  z-index: 1;
+  pointer-events: none;
 }
 
 /* Font Size for larger devices */
@@ -1083,11 +1107,53 @@ img {
   .qualification__sections {
     grid-template-columns: 0.5fr;
     width: 35rem;
+    text-align: center;
+    border-radius: 10px;
+    position: relative;
   }
+
+  @property --angle{
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+  }
+
+  .qualification__sections::after, .qualification__sections::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: conic-gradient(from var(--angle), #ff4545, #00ff99, #006aff, #ff0095, #ff4545);
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: -1;
+    padding: 3px;
+    border-radius: 10px;
+    animation: 6s spin linear infinite;
+  }
+
+  .qualification__sections::before{
+    filter: blur(1.5rem);
+    opacity: 0.5;
+
+  }
+  @keyframes spin{
+    from{
+      --angle: 0deg;
+    }
+    to{
+      --angle: 360deg;
+    }
+  }
+
   .services_container {
     grid-template-columns: repeat(3, 218px);
     justify-content: center;
+
   }
+
+
   .services__content {
     padding: 6rem 0 2rem 2.5rem;
   }
