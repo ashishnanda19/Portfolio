@@ -60,13 +60,13 @@
 .cursor-dot{
   width: 10px;
   height: 10px;
-  background-color: rgb(242, 186, 43);
+  background-color: black;
 }
 
 .cursor-outline {
   width: 30px;
   height: 30px;
-  border: 2px solid rgb(242, 186, 43);
+  border: 2px solid black;
 }
 
 .cursor-dot,
