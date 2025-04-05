@@ -109,7 +109,7 @@
   text-align: center;
   color: white;
   font-size: 50px;
-  animation: slideIn 1.5s ease forwards;
+  animation: slideIn 3s ease forwards;
   transform: translateX(-100%);
   opacity: 0;
 }
