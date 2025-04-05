@@ -719,6 +719,7 @@ img {
 
 /*==================== Qualifications ====================*/
 
+
 .qualification__tabs {
   display: flex;
   justify-content: space-evenly;
@@ -979,7 +980,7 @@ img {
 }
 
 .footer__bg {
-  background-color: var(--first-color-second);
+  /* background-color: var(--first-color-second); */
   padding: 2rem 0 3rem;
 }
 
@@ -1274,19 +1275,19 @@ img {
     position: absolute;
     height: 100%;
     width: 100%;
-    background-image: conic-gradient(from var(--angle), #ff4545, #00ff99, #006aff, #ff0095, #ff4545);
+    background-image: conic-gradient(from var(--angle), #ff0000, #000000, #8c00ff, #000000, #000000);
     top: 50%;
     left: 50%;
     translate: -50% -50%;
     z-index: -1;
     padding: 1.5px;
     border-radius: 6px;
-    animation: 6s spin linear infinite;
+    animation: 4s spin linear infinite;
   }
 
   .qualification__sections::before{
-    filter: blur(1.5rem);
-    opacity: 0.5;
+    filter: blur(4.5rem);
+    opacity: 1;
 
   }
 
