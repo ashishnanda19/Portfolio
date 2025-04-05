@@ -26,13 +26,32 @@
     </video>
     <div class="intro-text">
       <h1>Ashish Kumar Nanda</h1>
-      <h5>CSE Undergrad</h5>
+      <h5><span id="typed"></span></h5>
       <br>
       <br>
       <br>
       <p id="newfont">scroll down for more...</p>
     </div>
+     <!-- 👇 Scroll-down Arrow -->
+     <div class="scroll-down">&#x2193;</div>
   </section>
+
+
+<!-- Typed.js CDN -->
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+<!-- Typed Init -->
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    new Typed("#typed", {
+      strings: ["CSE Undergrad", "Web Developer", "Tech Enthusiast"],
+      typeSpeed: 70,
+      backSpeed: 40,
+      loop: true
+    });
+  });
+</script>
+
 
 
   <div class="video-background">
