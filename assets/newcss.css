@@ -338,7 +338,7 @@ img {
   bottom: 0;
   left: 0;
   z-index: var(--z-fixed);
-  background-color: var(--body-color);
+  /* background-color: var(--body-color); */
 }
 
 .nav {
@@ -799,10 +799,18 @@ img {
 
 .services__content {
   position: relative;
-  background-color: var(--container-color);
+  /* background-color: var(--container-color);
   padding: 3.5rem 0.5rem 1.25rem 1.5rem;
   border-radius: 0.25rem;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15); */
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px); /* for Safari */
+  border-radius: 1rem;
+  box-shadow: 0 8px 100px var(--container-color);
+  border: 0px solid rgba(255, 255, 255, 0.2);
+  padding: 1.5rem;
+  color: white;
 }
 
 .services__button {
@@ -1264,7 +1272,7 @@ img {
     position: relative;
   }
 
-  @property --angle{
+  /* @property --angle{
     syntax: "<angle>";
     initial-value: 0deg;
     inherits: false;
@@ -1289,7 +1297,7 @@ img {
     filter: blur(4.5rem);
     opacity: 1;
 
-  }
+  } */
 
  
  
