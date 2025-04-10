@@ -807,7 +807,7 @@ img {
   backdrop-filter: blur(0px);
   -webkit-backdrop-filter: blur(0px); /* for Safari */
   border-radius: 1rem;
-  box-shadow: 0 8px 100px var(--container-color);
+  box-shadow: 0 6px 100px var(--container-color);
   border: 0px solid rgba(255, 255, 255, 0.2);
   padding: 1.5rem;
   color: white;
