@@ -15,44 +15,9 @@ window.addEventListener("mousemove", function(e) {
   cursorOutline.animate({
     left: `${posX}px`,
     top: `${posY}px`
-  }, {duration: 500, fill: "forwards"});
+  }, {duration: 150, fill: "forwards"});
   
 });
-
-const intro = document.getElementById('introSection');
-const mainContent = document.getElementById('header');
-
-window.addEventListener('scroll', () => {
-  if (window.scrollY > 50) {
-    intro.style.opacity = '0';
-    intro.style.visibility = 'hidden';
-    header.classList.add('show');
-  } else {
-    intro.style.opacity = '1';
-    intro.style.visibility = 'visible';
-    header.classList.remove('show');
-  }
-});
-
-
-
-// const introText = document.getElementById('introText');
-// const videoSection = document.getElementById('videoSection');
-
-// // Trigger the slide-in on load
-// window.addEventListener('load', () => {
-//   introText.classList.add('show');
-// });
-
-// // Hide the video section on scroll
-// window.addEventListener('scroll', () => {
-//   if (window.scrollY > 100) {
-//     videoSection.classList.add('hide');
-//   } else {
-//     videoSection.classList.remove('hide');
-//   }
-// });
-
 
 const navMenu = document.getElementById("nav-menu"),
   navToggle = document.getElementById("nav-toggle");
